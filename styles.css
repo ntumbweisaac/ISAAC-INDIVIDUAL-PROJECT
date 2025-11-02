@@ -1,0 +1,289 @@
+/* 
+   Reset default styles and set up base typography
+   This ensures consistent styling across different browsers 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-family: 'Arial', sans-serif; /* Clean, modern font for better readability */
+}
+
+/* Base body styles */
+body {
+    line-height: 1.6; /* Improved readability with increased line height */
+    color: #333; /* Dark gray for better contrast */
+    background-color: #aeaeae; /* Light gray background */
+}
+
+/* Header Section Styles
+   Contains the logo, main title, and description
+   Uses white background with subtle shadow for depth */
+header {
+    background-color: #fff;
+    padding: 1rem; /* Consistent spacing */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Logo container styling */
+.logo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Logo image sizing
+   Maintains aspect ratio while limiting maximum width */
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Main header title styling */
+header h1 {
+    color: #2c3e50; /* Dark blue for emphasis */
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2.5rem; /* Large, prominent text */
+}
+
+/* Header paragraph styling
+   Centered with maximum width for optimal readability */
+header p {
+    text-align: center;
+    max-width: 800px; /* Limit line length for better readability */
+    margin: 0 auto;
+    color: #666; /* Subtle gray for secondary text */
+    padding: 0 1rem;
+}
+
+/* Navigation Menu Styles
+   Horizontal navigation with interactive hover effects
+   Separated from header content with a subtle border */
+nav {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    border-top: 1px solid #eee; /* Subtle separator line */
+}
+
+/* Navigation link styling */
+nav a {
+    text-decoration: none;
+    color: #2c3e50; /* Dark blue matching the theme */
+    margin: 0 1rem; /* Space between links */
+    padding: 0.5rem 1rem;
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+/* Interactive hover effect
+   Changes background and text color when hovering */
+nav a:hover {
+    background-color: #2c3e50;
+    color: #fff; /* White text on dark background */
+}
+
+/* Main Content Area Styles
+   Centers content with maximum width and responsive padding
+   Creates a clean, organized layout for the main content */
+main {
+    max-width: 1200px; /* Limit width for large screens */
+    margin: 2rem auto; /* Center content horizontally */
+    padding: 0 1rem; /* Responsive padding */
+}
+
+/* Content section styling
+   Card-like appearance with white background and shadow */
+main section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle elevation */
+    margin-bottom: 2rem;
+}
+
+/* Main content headings */
+main h1 {
+    color: #2c3e50; /* Consistent with theme */
+    margin-bottom: 1.5rem;
+    font-size: 2rem; /* Large, readable size */
+}
+
+/* Image styling within main content
+   Ensures responsive behavior and consistent appearance */
+main img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    margin: 2rem 0; /* Vertical spacing */
+}
+
+/* List Styles */
+ul {
+    list-style-position: inside;
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+/* Strong Text Styling */
+strong {
+    color: #2c3e50;
+}
+
+/* Footer Section Styles
+   Dark background with light text for contrast
+   Contains social links and copyright information */
+footer {
+    background-color: #2c3e50; /* Dark blue background */
+    color: #fff; /* White text for contrast */
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 3rem; /* Space between content and footer */
+}
+
+/* Footer heading style */
+footer h6 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer links (social media, etc.)
+   Interactive with hover effect */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem; /* Space between links */
+    font-size: 0.9rem;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Footer link hover effect
+   Changes to light blue for interaction feedback */
+footer a:hover {
+    color: #3498db; /* Light blue on hover */
+}
+
+/* Copyright text and additional information */
+footer p {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    opacity: 0.8; /* Slightly transparent for secondary information */
+}
+
+/* Form Styles
+   Modern, clean form design with consistent spacing
+   and interactive elements */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Form group styling */
+form div {
+    margin-bottom: 1.5rem;
+}
+
+/* Label styling */
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Input and textarea styling */
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input focus state */
+.form-control:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Submit button hover state */
+button[type="submit"]:hover {
+    background-color: #34495e;
+}
+
+/* Contact section additional styling */
+#contact {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+#contact h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#contact h4 {
+    color: #2c3e50;
+    margin: 1.5rem 0 1rem;
+    font-size: 1.5rem;
+}
+
+#contact ul.social {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul.social li {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+/* Responsive Design for Mobile Devices
+   Adjusts layout and sizing for screens smaller than 768px
+   Ensures good user experience on smartphones and tablets */
+@media (max-width: 768px) {
+    /* Reduce header size on mobile */
+    header h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    /* Stack navigation links vertically on mobile */
+    nav a {
+        display: block;
+        margin: 0.5rem 0; /* Vertical spacing between links */
+    }
+
+    /* Adjust main content padding for mobile */
+    main {
+        padding: 0 0.5rem; /* Reduced padding on small screens */
+    }
+}
